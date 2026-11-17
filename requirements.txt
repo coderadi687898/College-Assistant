@@ -1,0 +1,14 @@
+# DocuVideo RAG: Autonomous Document-to-Video Explainer Engine
+# Complete dependencies list for Python 3.10+ on Windows
+
+streamlit>=1.30.0
+pdfplumber>=0.10.0
+pypdfium2>=4.0.0
+chromadb>=0.4.0
+moviepy>=1.0.3
+imageio-ffmpeg>=0.4.9
+Pillow>=9.0.0
+pywin32>=306
+numpy>=1.24.0
+pandas>=2.0.0
+python-dotenv>=1.0.0

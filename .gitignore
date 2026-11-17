@@ -1,0 +1,57 @@
+# ==============================================================================
+# Git Ignore Rules for DocuVideo RAG
+# ==============================================================================
+
+# Environment files and credentials (CRITICAL: Do not upload .env to GitHub)
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+!*.env.template
+
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit Local Runtime
+.streamlit/secrets.toml
+
+# Local Vector Storage & Temporary Working Directories
+temp/
+extracted_assets/
+.chroma/
+
+# Generated Video & Audio Outputs (Exclude heavy generated media files from GitHub)
+output/audio/*.wav
+output/slides/*.png
+output/videos/*.mp4
+output/test_audio/
+output/test_slides/
+output/*.mp4
+
+# Operating System specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary Office Lock Files
+~$*.docx
